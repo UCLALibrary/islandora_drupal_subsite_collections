@@ -1,0 +1,471 @@
+/**
+ * @file
+ * Block Styling
+ */
+
+@import "base";
+
+
+.block { /* Block wrapper */
+  margin-bottom: 1.5em;
+
+  &.first { /* The first block in the region */
+  }
+
+  &.last { /* The last block in the region */
+  }
+
+  &.odd { /* Zebra striping for each block in the region */
+  }
+
+  &.even { /* Zebra striping for each block in the region */
+  }
+}
+
+h2.block-title { /* Block title */
+  color: #000;
+  font-weight: bold;
+}
+
+#block-aggregator-category-1 { /* Block for the latest news items in the first category */
+}
+
+#block-aggregator-feed-1 { /* Block for the latest news items in the first feed */
+}
+
+#block-block-1 { /* First block created with "Add block" link */
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+  clear: left;
+  p {
+    margin: 0.3em 0 0 0;
+  }
+}
+
+#block-block-2 {
+  float: right;
+  margin: 2px;
+  padding: 23px 30px 0 0;
+  height: 40px;
+  position: relative;
+  top: -16px;
+}
+
+#block-block-2 a {
+  padding-left: 1px;
+}
+
+/* Footie Block */
+#block-block-3 {
+  font-size: 85%;
+  line-height: 15px;
+  padding: 0 25px 0 10px; 
+ a {
+color: #ffb300;
+}
+
+ a:hover {
+text-decoration: underline;
+ }
+}
+
+#block-block-3 img {
+padding: 0 40px 5px 0;
+margin-top: -1em;
+border:none;
+}
+
+/* Islandora Blocks */
+
+#block-accordion-rotator-accordion-rotator {
+  margin-bottom: 2.7em;
+}
+
+#block-islandora-solr-simple {
+  margin-top: 0.6em;
+  position: relative;
+
+  .form-item {
+    margin: 0;
+  }
+  .form-text {
+    width: 39%;
+    font-family: 'News Cycle', helvetica, arial;
+    color: #808184;
+    float: right;
+    height: 1.9em;
+    padding-left: 0.5em;
+    border: 1px solid #666;
+    border-radius: 7px;
+      -webkit-border-radius: 7px;
+    box-shadow: 0 3px 3px -3px #808184;
+      -webkit-box-shadow: 0 3px 3px -3px #808184;
+  }
+  .form-submit {
+    background: url("../images/search.png") no-repeat;
+    position: absolute;
+    right: 12px;
+    top: 3px;
+    color: transparent;
+    border: none;
+    height: 28px;
+    width: 28px; 
+  }
+  .contextual-links-trigger {
+    display: none;
+  }
+}
+
+.islandora-solr-content {
+  tr {
+  display: block;
+  margin-bottom: 0.5em;
+  margin-left: 0.1em;
+  background: #CACDD3;
+  border: 1px solid #ccc;
+  padding: 5px;
+  }
+
+  td {
+   padding-right: 5px; 
+  } 
+}
+
+
+/* Menu Blocks */
+
+#block-menu-block-1, #block-islandora-solr-basic-facets, #block-menu-menu-browse, #block-menu-menu-browse-by-time, #block-menu-menu-browse-by-place, #block-menu-menu-browse-by-material
+{
+  background: #3282c1;
+  border-right: 1px solid #ababab;
+  border-left: 1px solid #ababab;
+  border-bottom: 1px solid #ababab;
+  border-top: none;
+  padding-bottom: 1em;
+  margin: 0 0 1em 1em;
+
+  h2 {
+  background-color: #3282c1;
+  color: white;
+  font-size: 100%;
+  padding: 1em 0 0 1em;
+  margin-bottom: -.5em;
+  text-transform: uppercase;
+  letter-spacing: 1.2pt;
+  }
+
+  h3 {
+    font-size: 110%;
+    font-weight: normal;
+    margin-left: 1em;
+    margin-bottom: 0;
+    letter-spacing: 0.8pt;
+  }
+  
+  a {color: white;
+  font-size: 90%;
+  letter-spacing: .6pt;
+  text-transform: uppercase;
+  }
+
+  ul {
+    padding: 0 1.5em;
+    margin-top: 1.5em;
+
+    li {
+    list-style: none;
+    margin-bottom: 0.5em;
+    line-height: 1.4em;
+    font-size: 90%;
+    padding-bottom: .6em;
+    }
+  }
+
+}
+
+/* Islandora Blocks */
+
+#block-islandora-solr-display-switch {
+  float: right;
+  margin: -7px;
+  position: relative; z-index: 50;
+  ul {
+    list-style: none; 
+    padding: 0;
+    margin: 11px;
+    min-width: 75px;
+  }
+}
+
+ul.pager {
+  margin: 1em 0;
+
+  li {
+
+    a {
+      color: #35425F;
+    }
+
+  }
+  li.pager-current {
+    color: #35425F;
+    background: #cbcbcb;
+    border: 1px solid #35425F;
+  }
+}
+
+.islandora-solr-display {
+
+  li {
+    float: left;
+  }
+   
+    a.display-default {
+      background: url("../images/display-grid-list.png") no-repeat top left;
+      width: 25px; height: 22px;
+      display: inline-block;
+      text-indent: -9999px;
+      outline: none;
+    }
+    a.display-grid {
+      @extend a.display-default;
+      background: url("../images/display-grid.png") no-repeat top left;
+    }
+    a.display-table {
+      @extend a.display-default;
+      background: url("../images/display-list.png") no-repeat top left;
+    }
+
+}
+
+.islandora-basic-collection-display-switch {
+  margin-top: .1em;
+  margin-right: 4em;
+  
+  li {
+    float: left;
+    padding: 0 !important;
+  }
+
+a.islandora-view-grid {
+    width: 25px; height: 25px;
+    margin-top: -2em;
+    margin-right: .6em;
+    display: inline-block;
+    text-indent: -9999px;
+    border: 1px solid #666;
+    background: url("../images/display-grid.png") no-repeat top left;
+  }
+
+  a.islandora-view-list {
+    @extend a.islandora-view-grid;
+    background: url("../images/display-list.png") no-repeat top left;
+  }
+
+}
+
+#islandora-solr-top {
+  float: left;
+  margin-left: 7px;
+}
+
+.solr-label.dc-title, .solr-value.dc-title {
+  background: #dbdcdd;
+  border-radius: 0 0 5px 0;
+    -webkit-border-radius: 0 0 5px 0;
+}
+
+dl.solr-fields {
+  float: left;
+}
+
+dl.solr-grid-field {
+  background: #ffffff;
+  padding: 1px 1px 10px 10px;
+  width: 20%;
+  border: 1px solid #f2f2f2;
+
+  dt.solr-grid-thumb {
+    img {
+      display: block;
+      max-height: 160px;
+      max-width: 160px;
+      border-radius: 1;
+      -webkit-border-radius: 1;
+  }
+  dd.solr-grid-caption {
+      margin: -.9em 0 0 .3em;
+      }
+
+    a {
+      line-height: 1.3em; 
+      display: inline-block;
+      font-size: 100%;
+      letter-spacing: .6pt;
+      margin: 1.5em 0 1.5em .05em;
+    }
+  }
+}
+
+dl.islandora-basic-collection-object {
+  @extend dl.solr-grid-field;
+  min-height: 225px;
+  min-width: 180px;
+  border: 1px solid #acacac;
+  -moz-box-shadow: 3px 3px 3px #CFCFCF;
+  -webkit-box-shadow: 2px 2px 2px #CFCFCF;
+  box-shadow: 3px 3px 3px #CFCFCF;
+   border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.islandora-basic-collection-object dt img {
+  min-width: 160px;
+  min-height: 160px;
+  padding: inherit;
+  margin: -.5em 0;
+  border: 1px solid #acacac;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background: #666;
+}
+
+.islandora-basic-collection-object dt dd{
+  border: 1px solid #acacac;
+  min-width: 175px;
+  min-height: 175px;
+  -moz-box-shadow: 3px 3px 3px #ededed;
+  -webkit-box-shadow: 3px 3px 3px #ededed;
+  box-shadow: 3px 3px 3px #ededed;
+}
+
+.islandora-basic-collection-grid {
+  dt.islandora-basic-collection-thumb{
+   @extend dt.solr-grid-thumb; 
+  } 
+
+  dd.islandora-basic-collection-caption, dd.islandora-basic-collection-caption {
+    @extend dd.solr-grid-caption;
+    padding-left: 0;
+    margin-top: -1.2em;
+    font-size: 1em;
+    letter-spacing: .5pt;
+    font-weight: bold;
+  }
+}
+
+div.islandora-basic-collection-object {
+  @extend dl.solr-grid-field;
+  border: none;
+  width: auto;
+
+  dd.dc-description {
+    @extend dd.solr-grid-caption;
+    font-size: 85%;
+  }
+}
+
+.islandora-large-image-content, .islandora-basic-image-content {
+  background: #ffffff;
+  border-radius: 0;
+  border: 1px solid #999;
+}
+
+.islandora-large-image-sidebar, .islandora-basic-image-sidebar {
+  h2 {
+    font-size: 110%;
+  }
+
+  p {
+    margin-top: 0.5em;
+    font-size: 90%;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0 0;
+    font-size: 90%;
+  }
+}
+
+.islandora-large-image-metadata, .islandora-basic-image-metadata {
+  margin: 1.5em 0 0 -1.8em;
+}
+
+#clip {
+}
+
+/* End Islandora stuff */
+
+#block-blog-recent { /* "Recent blog posts" block */
+}
+
+#block-book-navigation { /* "Book navigation" block for the current book's table of contents */
+}
+
+#block-comment-recent { /* "Recent comments" block */
+}
+
+#block-forum-active { /* "Active forum topics" block */
+}
+
+#block-forum-new { /* "New forum topics" block */
+}
+
+#block-locale-language { /* Language switcher block */
+}
+
+#block-menu-menu-NAME { /* Custom menu block */
+}
+
+#block-node-recent { /* "Recent content" block */
+}
+
+#block-node-syndicate { /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
+}
+
+#block-poll-recent { /* "Most recent poll" block */
+}
+
+#block-profile-author-information { /* "Author information" block for the profile of the page's author */
+}
+
+#block-search-form { /* "Search form" block */
+}
+
+#block-shortcut-shortcuts { /* "Shortcuts" block */
+}
+
+#block-statistics-popular { /* "Popular content" block */
+}
+
+#block-system-main-menu { /* "Main menu" block */
+}
+
+#block-system-management { /* "Management" block for Drupal management menu */
+}
+
+#block-system-navigation { /* "Navigation" block for Drupal navigation menu */
+}
+
+#block-system-user-menu { /* "User menu" block for Drupal user menu */
+}
+
+#block-system-help { /* "System help" block */
+}
+
+#block-system-main { /* "Main page content" block */
+}
+
+#block-system-powered-by { /* "Powered by Drupal" block */
+}
+
+#block-user-login { /* "User login form" block */
+}
+
+#block-user-new { /* "Who's new" block for a list of the newest users */
+}
+
+#block-user-online { /* "Who's online" block for a list of the online users */
+}

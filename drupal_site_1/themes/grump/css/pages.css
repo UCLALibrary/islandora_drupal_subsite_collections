@@ -1,0 +1,416 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+/*
+ * Body
+ */
+/* line 17, ../sass/pages.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+
+/* line 23, ../sass/pages.scss */
+#page {
+  margin: 1.5em 1.5em 1.5em 3.5em;
+  background: #fff;
+  color: #000;
+  box-shadow: inset 6px 0 4px -4px #e9e9e9 , inset -6px 0 4px -4px #e9e9e9;
+  -moz-box-shadow: inset 6px 0 4px -4px #e9e9e9, inset -6px 0 4px -4px #e9e9e9;
+  -webkit-box-shadow: inset 6px 0 4px -4px #e9e9e9, inset -6px 0 4px -4px #e9e9e9;
+}
+
+/* line 32, ../sass/pages.scss */
+img {
+  border: 1px solid #BFBFBF;
+}
+
+/**
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+/* line 39, ../sass/pages.scss */
+#skip-link {
+  margin: 0;
+}
+/* line 43, ../sass/pages.scss */
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/*
+ * Header
+ */
+/* line 57, ../sass/pages.scss */
+#header {
+  background: url("../images/grey.png");
+  padding-top: 12px;
+  box-shadow: inset 6px 0 4px -4px #e9e9e9 , inset -6px 0 4px -4px #e9e9e9;
+  -moz-box-shadow: inset 6px 0 4px -4px #e9e9e9, inset -6px 0 4px -4px #e9e9e9;
+  -webkit-box-shadow: inset 6px 0 4px -4px #e9e9e9, inset -6px 0 4px -4px #e9e9e9;
+}
+
+/* line 65, ../sass/pages.scss */
+#logo {
+  /* Wrapping link for logo */
+  float: left;
+  margin: 1.45em 0 0 0;
+  padding: 3px 8px 15px 25px;
+}
+/* line 70, ../sass/pages.scss */
+#logo img {
+  vertical-align: bottom;
+}
+
+/* line 75, ../sass/pages.scss */
+#name-and-slogan {
+  /* Wrapper for website name and slogan */
+  float: left;
+}
+
+/* line 80, ../sass/pages.scss */
+#site-name {
+  /* The name of the website */
+  margin: 1.1em 0 0 0;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  padding-top: .1em;
+  font-family: 'Open Baskerville', georgia;
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 6px;
+  border-left: 1px solid black;
+}
+/* line 92, ../sass/pages.scss */
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 102, ../sass/pages.scss */
+#site-slogan {
+  /* The slogan (or tagline) of a website */
+  margin: 0;
+  font-size: 1em;
+}
+
+/* line 107, ../sass/pages.scss */
+.region-header {
+  /* Wrapper for any blocks placed in the header region */
+  /*clear: both; Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+/* line 121, ../sass/pages.scss */
+#main {
+  overflow: hidden;
+  margin-bottom: -2em;
+}
+
+/*
+ * Content
+ */
+/* line 130, ../sass/pages.scss */
+#content {
+  letter-spacing: .7px;
+}
+
+/* line 133, ../sass/pages.scss */
+#content {
+  padding-left: 2.5em;
+  margin: 1em 0 5em 0;
+}
+
+/* line 138, ../sass/pages.scss */
+.region-highlighted {
+  margin-top: -1em;
+}
+
+/* line 143, ../sass/pages.scss */
+.breadcrumb {
+  /* The path to the current page in the form of a list of links */
+  padding-left: 35px;
+  font-size: 78%;
+  letter-spacing: 0.6pt;
+  line-height: 1.5em;
+}
+/* line 148, ../sass/pages.scss */
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+/* line 152, ../sass/pages.scss */
+.breadcrumb li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 2px;
+  padding: 1px 5px 4px;
+}
+/* line 158, ../sass/pages.scss */
+.breadcrumb li .islandora-solr-breadcrumb-super {
+  font-size: 100%;
+  position: relative;
+  top: 4px;
+  left: 1px;
+}
+/* line 164, ../sass/pages.scss */
+.breadcrumb li:hover {
+  text-decoration: underline;
+}
+
+/* line 174, ../sass/pages.scss */
+h1.title,
+h2.node-title,
+h2.block-title,
+h2.title,
+h2.comment-form,
+h3.title {
+  /* Comment title */
+  margin: 0;
+}
+
+/* line 178, ../sass/pages.scss */
+h1.title {
+  color: #000;
+  background: #fff;
+  font-size: 115%;
+  letter-spacing: 0.5pt;
+  margin: 1em 0 -2.4em 1.3em;
+}
+
+/* line 186, ../sass/pages.scss */
+h2 {
+  color: #000;
+  font-size: 110%;
+  font-family: 'News Cycle', helvetica, arial;
+  font-weight: normal;
+  letter-spacing: 0.5pt;
+  margin: 1em 0 -1em 15.5em;
+}
+
+/* line 196, ../sass/pages.scss */
+tr.even {
+  /* Some tables have rows marked even or odd. */
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */
+}
+
+/* line 200, ../sass/pages.scss */
+tr.odd {
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */
+}
+
+/* line 204, ../sass/pages.scss */
+div.messages {
+  /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
+  margin: 3em 0;
+  /* Drupal core uses "6px 0" margin */
+}
+/* line 207, ../sass/pages.scss */
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 213, ../sass/pages.scss */
+div.status {
+  /* Normal priority messages */
+}
+
+/* line 217, ../sass/pages.scss */
+div.warning,
+tr.warning {
+  /* Medium priority messages */
+  /* border: 1px solid #f0c020; */
+  /* Drupal core uses: 1px solid #f0c020 */
+}
+
+/* line 222, ../sass/pages.scss */
+div.error,
+tr.error {
+  /* High priority messages. See also the .error declaration below. */
+}
+
+/* line 225, ../sass/pages.scss */
+.error {
+  /* Errors that are separate from div.messages status messages. */
+  /* color: #e55; */
+  /* Drupal core uses a #e55 background */
+}
+
+/* line 229, ../sass/pages.scss */
+.warning {
+  /* Warnings that are separate from div.messages status messages. */
+  /* color: #e09010; */
+  /* Drupal core uses a #e09010 background */
+}
+
+/* line 233, ../sass/pages.scss */
+.page-islandora .tabs {
+  /* See also the tabs.css file. */
+  margin-left: 1em !important;
+}
+
+/* line 237, ../sass/pages.scss */
+.region-help {
+  /* Help text on a page */
+}
+
+/* line 240, ../sass/pages.scss */
+.more-help-link {
+  /* Link to more help */
+}
+
+/* line 243, ../sass/pages.scss */
+.region-content {
+  /* Wrapper for the actual page content */
+}
+
+/* line 246, ../sass/pages.scss */
+ul.inline, .region-footer ul {
+  /* List of links generated by theme_links() */
+  display: inline;
+  padding: 0;
+}
+/* line 250, ../sass/pages.scss */
+ul.inline li, .region-footer ul li {
+  list-style-type: none;
+  padding: 0 1em 0 0;
+}
+
+/* line 255, ../sass/pages.scss */
+span.field-label {
+  /* The inline field label used by the Fences module */
+  padding: 0 1em 0 0;
+}
+
+/* line 259, ../sass/pages.scss */
+.item-list .pager {
+  /* A list of page numbers when more than 1 page of content is available */
+}
+/* line 261, ../sass/pages.scss */
+.item-list .pager li {
+  /* Each page number in the pager list */
+  padding: 0 0.5em;
+}
+
+/* line 266, ../sass/pages.scss */
+.not-front .item-list .pager {
+  position: relative;
+  top: -24px;
+}
+
+/* line 271, ../sass/pages.scss */
+.feed-icon {
+  /* The link to the RSS or Atom feed for the current list of content */
+}
+
+/* line 274, ../sass/pages.scss */
+.more-link {
+  /* Aggregator, blog, and forum more link */
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+/* line 284, ../sass/pages.scss */
+.region-sidebar-first {
+  padding: 1.5em 0 9999px;
+  color: 000;
+  margin-bottom: -9999px;
+}
+/* line 289, ../sass/pages.scss */
+.region-sidebar-first li a {
+  color: #35425F;
+}
+/* line 292, ../sass/pages.scss */
+.region-sidebar-first li a.active {
+  color: #ffb300;
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+/*
+ * Footer
+ */
+/* line 311, ../sass/pages.scss */
+#footer {
+  background: #3282c1;
+  max-width: 100%;
+  margin: 2px 0 0 0;
+  color: white;
+  box-shadow: inset 0 -3px 8px #666;
+  -moz-box-shadow: inset 0 -3px 8px #666;
+  -webkit-box-shadow: inset 0 -3px 8px #666;
+  margin-top: 5em;
+}
+
+/* line 322, ../sass/pages.scss */
+.front #footer {
+  margin: 4em auto;
+}
+
+/*
+ * Page bottom
+ */
+/*
+ * Islandora Overrides
+ */
+/* line 337, ../sass/pages.scss */
+.plusminus {
+  display: none;
+}
+
+/* line 341, ../sass/pages.scss */
+.islandora-solr-search-result {
+  background: #cacdd3;
+  padding-top: 5px;
+  box-shadow: 0 3px 3px -3px #808184;
+  -webkit-box-shadow: 0 3px 3px -3px #808184;
+  font-size: 85%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 351, ../sass/pages.scss */
+dl.solr-thumb {
+  padding: 0 5px 0 5px;
+}
+/* line 353, ../sass/pages.scss */
+dl.solr-thumb img {
+  box-shadow: 0 0 5px 1px rgba(38, 37, 38, 0.3);
+  -webkit-box-shadow: 0 0 5px 1px rgba(38, 37, 38, 0.3);
+}
+
+/* line 359, ../sass/pages.scss */
+dt.solr-label {
+  padding-left: 2px;
+}
+
+/* line 363, ../sass/pages.scss */
+.section-about .breadcrumb {
+  display: none;
+}
