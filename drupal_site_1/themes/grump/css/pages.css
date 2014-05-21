@@ -18,7 +18,7 @@ body {
 
 /* line 23, ../sass/pages.scss */
 #page {
-  margin: 1.5em 1.5em 1.5em 3.5em;
+  margin: 1.5em 1.5em 1.5em 15em;
   background: #fff;
   color: #000;
   box-shadow: inset 6px 0 4px -4px #e9e9e9 , inset -6px 0 4px -4px #e9e9e9;
